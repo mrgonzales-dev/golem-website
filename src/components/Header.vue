@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <span class="logo">GOLEM_</span>
+    <a href="#top" class="logo" @click.prevent="scrollToTop">GOLEM_</a>
     <nav>
       <a href="#manifesto">MANIFESTO</a>
       <a href="#specs">SPECS</a>
@@ -8,6 +8,12 @@
     </nav>
   </header>
 </template>
+
+<script setup>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+</script>
 
 <style scoped>
 .header {

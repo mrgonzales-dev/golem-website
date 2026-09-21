@@ -14,7 +14,7 @@
 const items = [
   'NO SOFTNESS',
   'EXPOSED WIRING',
-  'BUILT 2025',
+  'BUILT SEP 2026',
   'HARD EDGES ONLY',
   'FILLER: NONE',
   'GOLEM-01',
@@ -25,7 +25,9 @@ const items = [
 .marquee {
   overflow: hidden;
   border-bottom: 3px solid var(--ink);
-  background: var(--accent);
+  background-color: var(--accent);
+  background-image: var(--noise);
+  background-blend-mode: multiply;
   color: #111111;
   white-space: nowrap;
 }

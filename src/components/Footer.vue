@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <span>GOLEM © 2025</span>
+    <span>GOLEM © SEP 2026</span>
     <span>ALL WIRES EXPOSED</span>
   </footer>
 </template>
@@ -13,5 +13,8 @@
   border-top: 3px solid var(--ink);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
+  background-image: var(--noise);
+  background-blend-mode: overlay;
+  opacity: 0.95;
 }
 </style>

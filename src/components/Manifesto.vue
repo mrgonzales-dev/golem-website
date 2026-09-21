@@ -10,8 +10,11 @@
 
 <style scoped>
 .manifesto {
+  position: relative;
   padding: 3rem 2rem;
   border-bottom: 3px solid var(--ink);
+  background-image: var(--scratches);
+  background-size: 340px;
 }
 h2 {
   font-size: 1rem;

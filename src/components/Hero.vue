@@ -4,7 +4,7 @@
     <h1>GO<em>LEM</em></h1>
     <p class="tag">CUSTOM HARNESS. NO SOFTNESS.</p>
     <div class="meta">
-      <span>EST. 2025</span>
+      <span>EST. SEP 2026</span>
       <span>WIRES: EXPOSED</span>
       <span>WEIGHT: 84KG</span>
     </div>
@@ -13,8 +13,34 @@
 
 <style scoped>
 .hero {
+  position: relative;
   padding: 6rem 2rem 4rem;
   border-bottom: 3px solid var(--ink);
+  background-image: var(--scratches), radial-gradient(ellipse at 20% 10%, rgba(200, 255, 0, 0.08), transparent 55%),
+    radial-gradient(ellipse at 85% 90%, rgba(244, 242, 236, 0.06), transparent 50%);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--noise);
+  opacity: 0.25;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -2px;
+  height: 6px;
+  background: var(--accent);
+  transform: rotate(-0.6deg);
+  opacity: 0.5;
+}
+.hero > * {
+  position: relative;
 }
 .kicker {
   font-size: 0.75rem;

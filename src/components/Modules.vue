@@ -68,15 +68,19 @@ h2 {
   gap: 1.5rem;
 }
 .card {
+  position: relative;
   border: 3px solid var(--ink);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   transition: background 0.15s, color 0.15s;
+  background-image: var(--noise);
+  background-size: 160px;
+  background-blend-mode: overlay;
 }
 .card:hover {
-  background: var(--ink);
+  background-color: var(--ink);
   color: var(--paper);
 }
 .card-head {
